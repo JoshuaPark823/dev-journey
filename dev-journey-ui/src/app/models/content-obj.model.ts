@@ -9,4 +9,6 @@ export interface ContentObject {
     dateAdded: Date | undefined;
 
     category: string | undefined;
+
+    tags: string[] | undefined;
 }
