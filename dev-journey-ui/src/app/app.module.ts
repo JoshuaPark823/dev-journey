@@ -1,6 +1,12 @@
+import { ContentService } from './services/content.service';
+import { StateService } from './services/state.service';
 import { ContentAPI } from './api/content.api';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,10 +21,15 @@ import { ViewMainComponent } from './components/view-main/view-main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [
-    ContentAPI
+    ContentAPI,
+    ContentService,
+    StateService
   ],
   bootstrap: [AppComponent]
 })
