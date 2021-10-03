@@ -1,6 +1,7 @@
 .nav-container {
-    height: 10vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 7.5vh;
+    background-color: #21232B;
+    box-shadow: #191818 0px 8px 24px;
 
     .nav-main {
         display: flex;
@@ -10,6 +11,7 @@
         padding: 0 2em 0 2em;
 
         .header {
+            font-size: 1.5rem;
         }
     }
 }
