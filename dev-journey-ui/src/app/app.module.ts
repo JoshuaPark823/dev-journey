@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +27,8 @@ import { WriteMainComponent } from './components/write-main/write-main.component
     AppRoutingModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule
   ],
   providers: [
     ContentAPI,
