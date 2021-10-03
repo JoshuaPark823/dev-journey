@@ -7,6 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,13 +15,15 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ViewMainComponent } from './components/view-main/view-main.component';
 import { WriteMainComponent } from './components/write-main/write-main.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     ViewMainComponent,
-    WriteMainComponent
+    WriteMainComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { WriteMainComponent } from './components/write-main/write-main.component
     MatMenuModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [
     ContentAPI,

@@ -1,0 +1,30 @@
+.side-nav-container {
+    border-right: 1px solid #21232B;
+    min-height: 90vh;
+
+    padding-top: 2.5em;
+    margin-left: 15em;
+
+    .panel {
+        .panel-header {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+        .panel-header:hover {
+            background-color: #222526;
+        }
+
+        .sub-item {
+            padding: 0.5em 2em 0.5em 1em;
+            
+            height: inherit;
+            width: inherit;
+
+            border-radius: 0.25em;
+        }
+
+        .sub-item:hover {
+            background-color: #222526;
+        }
+    }
+}
