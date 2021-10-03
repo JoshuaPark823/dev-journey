@@ -12,12 +12,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ViewMainComponent } from './components/view-main/view-main.component';
+import { WriteMainComponent } from './components/write-main/write-main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    ViewMainComponent
+    ViewMainComponent,
+    WriteMainComponent
   ],
   imports: [
     BrowserModule,
