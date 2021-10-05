@@ -16,6 +16,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ViewMainComponent } from './components/view-main/view-main.component';
 import { WriteMainComponent } from './components/write-main/write-main.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { ExploreMainComponent } from './components/explore-main/explore-main.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     TopNavComponent,
     ViewMainComponent,
     WriteMainComponent,
-    SideNavComponent
+    SideNavComponent,
+    ExploreMainComponent
   ],
   imports: [
     BrowserModule,
