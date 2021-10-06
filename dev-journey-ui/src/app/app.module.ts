@@ -1,3 +1,4 @@
+import { PostComponent } from './components/shared-components/PostComponent';
 import { ContentService } from './services/content.service';
 import { StateService } from './services/state.service';
 import { ContentAPI } from './api/content.api';
@@ -8,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +28,8 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
     ViewMainComponent,
     WriteMainComponent,
     SideNavComponent,
-    ExploreMainComponent
+    ExploreMainComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
     BrowserAnimationsModule,
     MatButtonModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [
     ContentAPI,

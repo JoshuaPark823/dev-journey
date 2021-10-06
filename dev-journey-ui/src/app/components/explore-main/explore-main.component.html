@@ -1,3 +1,6 @@
 <div routerLink = "/explore" routerLinkActive="active">
-working!
+    <div class="test">
+        <!-- <app-post-component></app-post-component> -->
+        <div markdown [src]="/data/test.md" (load) = "onLoad($event)" (error)="onError($event)"></div>
+    </div>
 </div>
