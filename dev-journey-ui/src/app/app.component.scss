@@ -13,8 +13,10 @@ $padding-var: 2.5em;
 
         .sub {
             border: $show-border solid #ffff;
+            padding: $padding-var;
 
-            padding: $padding-var; 
+            width: 25vw;
+            font-family: $lora-font;
         }
     }
 }

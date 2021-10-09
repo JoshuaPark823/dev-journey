@@ -1,5 +1,9 @@
-An h1 header
+Add a blog to your Angular website using markdown files
 ============
+
+![alt text]('dev-journey-ui/src/assets/posts/test1.post/test-img-hero.jpg')
+
+</br></br></br></br></br></br></br></br>
 
 Paragraphs are separated by a blank line.
 
