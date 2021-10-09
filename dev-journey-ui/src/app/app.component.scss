@@ -1,16 +1,8 @@
 .main {
     height: 100%;
     width: 100%;
-
+    
     .sub {
-        display: flex;
-
-        .side-nav {
-            width: 25vw;
-        }
-
-        .panel-right {
-            width: 25vw;
-        }
+        border: 2px solid #ffff;
     }
 }
