@@ -1,9 +1,9 @@
 Add a blog to your Angular website using markdown files
 ============
 
-![alt text]('dev-journey-ui/src/assets/posts/test1.post/test-img-hero.jpg')
-
-</br></br></br></br></br></br></br></br>
+</br>
+<img src="/assets/posts/test1.post/test-img-hero.jpg" width = "650px">
+</br></br>
 
 Paragraphs are separated by a blank line.
 

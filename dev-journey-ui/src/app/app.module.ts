@@ -38,7 +38,7 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
       markedOptions: {
         provide: MarkedOptions,
         useValue: {
-          baseUrl: ''
+          baseUrl: '.'
         }
       }
     })
