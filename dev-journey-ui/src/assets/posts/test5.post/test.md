@@ -2,7 +2,7 @@ Add a blog to your Angular website using markdown files
 ============
 
 </br>
-<img src="/assets/posts/test2.post/test-img-hero.jpg" width = "650px">
+<img src="/assets/posts/test5.post/test-img-hero.jpg" width = "650px">
 </br></br>
 
 Paragraphs are separated by a blank line.
