@@ -1,3 +1,8 @@
 <div routerLink = "/explore" routerLinkActive="active">
-    <markdown [src]="'./assets/posts/test1.post/test.md'"></markdown>
+
+    <div class="content-container">
+        <div class="content-item">
+            <markdown *ngFor = "let post of allPosts" [src] = "post.filePath"></markdown>
+        </div>
+    </div>
 </div>
