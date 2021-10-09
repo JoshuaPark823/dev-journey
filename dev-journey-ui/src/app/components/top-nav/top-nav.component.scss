@@ -7,7 +7,8 @@ $inner-margin: 30em;
 
 .nav-container {
 
-    font-family: $spartan-font;
+    font-family: $manrope-font;
+    border: $show-border solid #ffff;
 
     .nav-main {
         height: 7.5vh;
@@ -17,7 +18,7 @@ $inner-margin: 30em;
         
         .left {
             width: 25vw;
-            border: 2px solid #ffff;
+            border: $show-border solid #ffff;
 
             display: flex;
             align-items: center;
@@ -36,7 +37,7 @@ $inner-margin: 30em;
         }
 
         .right {
-            border: 2px solid #ffff;
+            border: $show-border solid #ffff;
 
             width: 25vw;
 

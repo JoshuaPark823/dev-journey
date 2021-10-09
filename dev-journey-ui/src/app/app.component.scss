@@ -1,8 +1,20 @@
+@import './../app/styles/constants.styles.scss';
+
+$padding-var: 2.5em;
+
 .main {
     height: 100%;
     width: 100%;
-    
-    .sub {
-        border: 2px solid #ffff;
+
+    .sub-container {
+
+        display: flex;
+        justify-content: center;
+
+        .sub {
+            border: $show-border solid #ffff;
+
+            padding: $padding-var; 
+        }
     }
 }
