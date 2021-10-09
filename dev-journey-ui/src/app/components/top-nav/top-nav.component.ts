@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
+  titleText: string = '<DevJourney/>';
+  numReaders: number = 677;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

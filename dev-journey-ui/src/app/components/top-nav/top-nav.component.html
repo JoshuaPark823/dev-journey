@@ -1,7 +1,17 @@
 <div class="nav-container">
     <div class="nav-main">
-        <img src = "./../../../assets/images/seedling_1f331.png" height = "33.3px">
-        <h1 class="header">Dev Journey</h1>
-        <button mat-button>Menu</button>
+
+        <!-- flex left -->
+        <div class="left">
+            <h1 class="header">{{ titleText }}</h1>
+            <div class="sub-item">{{ numReaders }} Followers </div>
+            <div class="sub-item">About</div>
+            <div class="sub-item">Subscribe</div>
+        </div>
+
+        <!-- flex right -->
+        <div class="right">
+            <img class="logo" src = "./../../../assets/images/seedling_1f331.png" height = "33.3px">
+        </div>
     </div>
 </div>

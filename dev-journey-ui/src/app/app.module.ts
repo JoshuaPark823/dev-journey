@@ -1,4 +1,3 @@
-import { PostComponent } from './components/shared-components/PostComponent';
 import { ContentService } from './services/content.service';
 import { StateService } from './services/state.service';
 import { ContentAPI } from './api/content.api';
@@ -16,7 +15,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ViewMainComponent } from './components/view-main/view-main.component';
-import { WriteMainComponent } from './components/write-main/write-main.component';
 import { ExploreMainComponent } from './components/explore-main/explore-main.component';
 
 @NgModule({
@@ -24,9 +22,7 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
     AppComponent,
     TopNavComponent,
     ViewMainComponent,
-    WriteMainComponent,
     ExploreMainComponent,
-    PostComponent
   ],
   imports: [
     BrowserModule,
