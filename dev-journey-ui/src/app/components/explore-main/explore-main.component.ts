@@ -28,4 +28,12 @@ export class ExploreMainComponent implements OnInit {
       });
   }
 
+  /**
+   * 
+   * @param selectedTile Selected Tile 
+   */
+  openTile(selectedTile: PostObject): void {
+    console.log(selectedTile);
+  }
+
 }

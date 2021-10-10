@@ -5,7 +5,7 @@
 
             <!-- Render post tiles -->
             <div *ngFor = "let post of allPosts" class="item-wrapper">
-                <app-post-tile [postRef]="post"></app-post-tile>
+                <app-post-tile [postRef]="post" (click)="openTile(post)"></app-post-tile>
             </div>
         </div>
     </div>
