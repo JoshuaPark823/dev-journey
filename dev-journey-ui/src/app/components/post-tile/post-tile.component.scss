@@ -1,0 +1,14 @@
+@import './../../styles/constants.styles.scss';
+
+.tile-container {
+
+    height: 40vh;
+    width: 25vw;
+    border: $show-border solid #ffff;
+
+    margin: 2.5em 0 2.5em 0;
+
+    .tile {
+
+    }
+}

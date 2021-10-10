@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ViewMainComponent } from './components/view-main/view-main.component';
 import { ExploreMainComponent } from './components/explore-main/explore-main.component';
+import { PostTileComponent } from './components/post-tile/post-tile.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
     TopNavComponent,
     ViewMainComponent,
     ExploreMainComponent,
+    PostTileComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,12 @@
 <div routerLink = "/explore" routerLinkActive="active">
 
     <div class="content-container">
-        <div class="content-item">
-            <markdown *ngFor = "let post of allPosts" [src] = "post.filePath"></markdown>
+        <div class="content">
+
+            <!-- Render post tiles -->
+            <div *ngFor = "let post of allPosts" class="item-wrapper">
+                <app-post-tile [postRef]="post"></app-post-tile>
+            </div>
         </div>
     </div>
 </div>

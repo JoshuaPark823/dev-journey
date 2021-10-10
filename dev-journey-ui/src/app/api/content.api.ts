@@ -8,7 +8,7 @@ export class ContentAPI {
 
   // RG: lmao change once we add the back, no time for now
   private tempTitles: string[] = [
-    'test1', 'test2', 'test3', 'test4', 'test5'
+    'test1', 'test2', 'test3', 'test4', 'test5', 'test6', 'test7'
   ];
 
   constructor() { 
