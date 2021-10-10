@@ -3,12 +3,25 @@
 .tile-container {
 
     height: 40vh;
-    width: 25vw;
+    width: 20vw;
+
     border: $show-border solid #ffff;
+    border-radius: 0.5em;
+    box-shadow: $global-box-shadow;
 
     margin: 2.5em 0 2.5em 0;
 
     .tile {
 
+        padding: 1em;
+
+        .tile-header {
+
+        }
     }
+}
+
+.tile-container:hover {
+    background-color: #21232B;
+    cursor: pointer;
 }

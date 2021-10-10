@@ -26,8 +26,11 @@ export class ContentAPI {
 
     for (const title of this.tempTitles) {
 
-      let filePath: string = `./assets/posts/${title}.post/${title}.md`;
-      let localObj: PostObject = new PostObject(title, filePath);
+      let filePath = `./assets/posts/${title}.post/${title}.md`;
+
+      let desc = 'This is a sample description. In production we will use a short description of the post.';
+      
+      let localObj: PostObject = new PostObject(title, filePath, desc);
 
       test.push(localObj);
     }
