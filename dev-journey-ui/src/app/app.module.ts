@@ -10,6 +10,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +46,9 @@ import { PostTileComponent } from './components/post-tile/post-tile.component';
           baseUrl: '.'
         }
       }
-    })
+    }),
+    MatSlideToggleModule,
+    FormsModule
   ],
   providers: [
     ContentAPI,

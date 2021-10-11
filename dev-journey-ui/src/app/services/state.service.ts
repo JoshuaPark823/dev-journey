@@ -7,5 +7,5 @@ export class StateService {
 
   constructor() { }
 
-  
+
 }

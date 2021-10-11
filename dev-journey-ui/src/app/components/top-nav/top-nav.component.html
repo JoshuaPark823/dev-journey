@@ -11,6 +11,9 @@
 
         <!-- flex right -->
         <div class="right">
+            <div class="darkmode-toggle">
+                <mat-slide-toggle [(ngModel)]="viewModeState" (ngModelChange) = "setDarkModeState()">{{ viewMode }}</mat-slide-toggle>
+            </div>
             <img class="logo" src = "./../../../assets/images/seedling_1f331.png" height = "33.3px">
         </div>
     </div>
