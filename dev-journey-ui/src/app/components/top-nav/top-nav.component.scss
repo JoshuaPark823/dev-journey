@@ -1,9 +1,8 @@
 @import './../../styles/constants.styles.scss';
 
-$header-size: 1.5rem;
+$header-size: 1.33rem;
 $sub-header-size: 0.85rem;
-$outer-margin: 40em;
-$inner-margin: 10em;
+$outer-padding: 2.5em;
 
 .nav-container {
 
@@ -16,17 +15,17 @@ $inner-margin: 10em;
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
         
         .left {
-            width: 25vw;
+            width: 33.3vw;
             border: $show-border solid #ffff;
 
             display: flex;
             align-items: center;
             justify-content: space-evenly;
 
-            margin-left: $outer-margin;
-            margin-right: $inner-margin;
+            margin-left: $outer-padding;
 
             .header {
                 font-size: $header-size;
@@ -40,15 +39,14 @@ $inner-margin: 10em;
         .right {
             border: $show-border solid #ffff;
 
-            width: 25vw;
+            width: 33.3vw;
 
             display: flex;
             align-items: center;
             
-            justify-content: space-evenly;
+            justify-content:flex-end;
 
-            margin-left: $inner-margin;
-            margin-right: $outer-margin;
+            margin-right: $outer-padding;
         }
     }
 }
