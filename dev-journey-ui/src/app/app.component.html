@@ -1,7 +1,7 @@
 <div class="main">
   <app-top-nav (viewModeEvent)="updateViewState($event)"></app-top-nav>
   
-  <div class="sub-container">
+  <div class="sub-container" [ngClass]="{'light': viewState}">
     <div class="sub">
       <router-outlet></router-outlet>
     </div>

@@ -30,9 +30,12 @@ export class TopNavComponent implements OnInit {
     this.viewMode = this.viewModeState
       ? 'Light Mode'
       : 'Dark Mode';
+
+    // Propagate to service
+    
   }
 
 
 
-  
+
 }
