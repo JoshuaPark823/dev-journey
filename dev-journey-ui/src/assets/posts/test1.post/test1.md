@@ -1,174 +1,55 @@
-Add a blog to your Angular website using markdown files
-============
+
+# Primitive Obsession
+## Object-Oriented Design Anti-Patterns
 
 </br>
-<img src="/assets/posts/test1.post/test-img-hero.jpg" width = "650px">
-</br></br>
 
-Paragraphs are separated by a blank line.
+## What is it?
+The primitive obsession antipattern refers to the tendency to use primitive types to represent other abstractions.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+</br>
 
-  * this one
-  * that one
-  * the other one
+## Case Study: Deck of Cards 
+Let’s try to represent a deck of cards with some code. How do we go about doing this? Well for starters, a deck is just a collection of 52 cards that can be ordered by rank and suit. We could easily say that a single integer between 0-51 somehow represents a card, according to some ruling. 
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+</br>
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+For example, Clubs have numbers 0-12, Hearts are 13-25, and so on.
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+</br>
 
+There are three major drawbacks to using an implementation like above:
+  * The representation of a card does not map to the corresponding domain concept. 
+    * For more easily understandable code, generally representations of values should be tied to the concept that they represent 
+    * (e.g. using an int implies an integer. An int does not imply a “Card”).
+  * The representation of a card is coupled to its implementation.
+    * If the design decision to represent a card as an integer ever changes, perhaps to a string, we’d have to search for every single place an integer is used and change it to a string.
+  * Variable Corruption
+    * In Java, an integer can take 2^32 distinct values. As we’re only using 52 values, the remaining 2^32-52 values are seemingly useless. Although Java is being used here as an example, some of these restrictions are present in other OOP languages as well.
 
+</br>
 
-An h2 header
-------------
+Clearly using primitive types to represent our domain concept is a big no-no. Thankfully, enumerated types come to the rescue!
 
-Here's a numbered list:
+</br>
 
- 1. first item
- 2. second item
- 3. third item
+### Enumerated Types
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+The use of enumerated types over say, integers, provides the benefit of increased compile-time checking and less room for errors(possibly from passing in invalid constants), and you document which values are legal to use.
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+</br>
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+Below we have an example of an enumerated type that represents the Rank and Suit of a Card class written in Java.
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
+</br>
+
+~~~java
+enum Suit { CLUBS, DIAMONDS, SPADES, HEARTS };
+enum Rank { ACE, TWO, ... , QUEEN, KING }
+
+class Card {
+  Suit aSuit;
+  Rank aRank;
 }
 ~~~
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
-
-
-
-### An h3 header ###
-
-Now a nested list:
-
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned |  |
-| col 2 is      | centered      |    |
-| zebra stripes | are neat      |     |
-
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3

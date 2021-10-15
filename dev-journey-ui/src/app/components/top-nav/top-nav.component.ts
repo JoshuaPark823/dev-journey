@@ -34,8 +34,4 @@ export class TopNavComponent implements OnInit {
     // Propagate to service
     
   }
-
-
-
-
 }

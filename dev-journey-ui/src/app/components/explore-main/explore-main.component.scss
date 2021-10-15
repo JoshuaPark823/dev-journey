@@ -12,14 +12,14 @@ $padding-outer: 22.5em;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         color: white;
         font-family: Arial, Helvetica, sans-serif;
 
         padding: 0 $padding-outer 0 $padding-outer;
 
-        margin: 0 0 1em 0;
+        margin: 0 5em 1em 5em;
 
         .featured-left {
             display: flex;
