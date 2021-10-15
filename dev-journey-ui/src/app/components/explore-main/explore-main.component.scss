@@ -34,6 +34,10 @@ $padding-outer: 22.5em;
                     font-style: italic;
                     font-family: $lora-font;
                 }
+                p {
+                    float: right;
+                    font-family: $lora-font;
+                }
             }
         }
     }
