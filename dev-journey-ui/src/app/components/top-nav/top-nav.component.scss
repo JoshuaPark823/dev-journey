@@ -7,8 +7,9 @@ $outer-padding: 2.5em;
 .nav-container {
 
     font-family: $manrope-font;
-    border: $show-border solid #ffff;
-    border-bottom: 1px solid #21232B;
+    border: $dark-border;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     .nav-main {
         height: 7.5vh;
@@ -19,7 +20,7 @@ $outer-padding: 2.5em;
         
         .left {
             width: 33.3vw;
-            border: $show-border solid #ffff;
+            border: $dark-border;
 
             display: flex;
             align-items: center;
@@ -37,7 +38,7 @@ $outer-padding: 2.5em;
         }
 
         .right {
-            border: $show-border solid #ffff;
+            border: $dark-border;
 
             width: 33.3vw;
 

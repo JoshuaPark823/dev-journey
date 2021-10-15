@@ -5,11 +5,16 @@
     height: 40vh;
     width: 20vw;
 
-    border: $show-border solid #ffff;
+    border: $dark-border;
     border-radius: 0.5em;
     box-shadow: $global-box-shadow;
 
     margin: 2.5em 0 2.5em 0;
+
+    // background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background-color: whitesmoke;
+
+
 
     .tile {
 
@@ -19,6 +24,5 @@
 }
 
 .tile-container:hover {
-    background-color: #21232B;
     cursor: pointer;
 }

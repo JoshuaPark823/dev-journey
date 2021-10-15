@@ -4,8 +4,32 @@
 html {
     height: 100%;
     font-family: $lora-font;
-    background-color: #16181A;
-    color: #ffff;
+
+    // Blue/Yellow
+    // background: #ffd89b;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    // Blue
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    // Green
+    // background: #00bf8f;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    // Orange
+    // background: #D38312;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to top, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    // Green 2
+    // background: #215f00;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 body {
