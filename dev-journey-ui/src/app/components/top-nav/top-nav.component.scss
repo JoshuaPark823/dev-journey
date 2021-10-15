@@ -35,6 +35,18 @@ $outer-padding: 2.5em;
             .sub-item {
                 font-size: $sub-header-size;
             }
+
+            .sub-item-container {
+                background-color: #3A5C79;
+                color: white;
+                
+                padding: 1.25em;
+                border-radius: 33.3px;
+            }
+
+            .sub-item-container:hover {
+                cursor: pointer;
+            }
         }
 
         .right {
