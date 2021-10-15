@@ -9,7 +9,7 @@ import { Output, EventEmitter } from '@angular/core';
 export class TopNavComponent implements OnInit {
 
   titleText: string = '<DevJourney/>';
-  numReaders: number = 677;
+  numReaders: string = '1.5m';
 
   viewMode!: string;
   viewModeState: boolean = true;

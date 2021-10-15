@@ -1,8 +1,42 @@
 @import './../../styles/constants.styles.scss';
 
+$padding-outer: 22.5em;
+
 .content-container {
 
     width: 95vw;
+
+    .featured {
+        height: 75vh;
+        border: $dark-border;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+        padding: 0 $padding-outer 0 $padding-outer;
+
+        margin: 0 0 1em 0;
+
+        .featured-left {
+            display: flex;
+            align-items: center;
+
+            .featured-text-container {
+                h1 {
+                    font-size: 3.5rem;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    font-family: $lora-font;
+                }
+            }
+        }
+    }
 
     .content {
         display: flex;
