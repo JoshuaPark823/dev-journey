@@ -3,25 +3,19 @@
     <div class="content-container">
 
         <!-- Featured Article -->
-
         <div class="featured">
-            <div class="featured-left">
-                <div class="featured-text-container">
-                    <h1>Welcome to &lt;DevJourney/&gt;</h1>
-                    <h2>"The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery."</h2>
-                    <p>- Anais Nin</p>
-                </div>
-                <app-sponge-animation></app-sponge-animation>
+            <div class="featured-text-container">
+                <h1>Welcome to &lt;DevJourney/&gt;</h1>
+                <h2>"The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery."</h2>
+                <p>- Anais Nin</p>
             </div>
-            <div class="featured-right">
-                <!-- <div class="div" style="width: 600px; height: 800px; background-color: whitesmoke;"></div> -->
-            </div>
+            <app-sponge-animation></app-sponge-animation>
         </div>
 
         <!-- Content Display: Array of PostObject Tiles -->
         <div class="content">
             <!-- Render post tiles -->
-            <div *ngFor = "let post of allPosts" class="item-wrapper">
+            <div *ngFor = "let post of allPosts; index as i" class="item-wrapper">
                 <app-post-tile [postRef]="post" (click)="openTile(post)"></app-post-tile>
             </div>
         </div>

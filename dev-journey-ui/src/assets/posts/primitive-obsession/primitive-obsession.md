@@ -1,15 +1,25 @@
 
 # Primitive Obsession
-## Object-Oriented Design Anti-Patterns
+## Object-Oriented Programming - Design Anti-Patterns
+
+</br>
+
+<img src="/assets/posts/primitive-obsession/hero.jpg" width = "650px">
 
 </br>
 
 ## What is it?
+
+</br>
+
 The primitive obsession antipattern refers to the tendency to use primitive types to represent other abstractions.
 
 </br>
 
 ## Case Study: Deck of Cards 
+
+</br>
+
 Let’s try to represent a deck of cards with some code. How do we go about doing this? Well for starters, a deck is just a collection of 52 cards that can be ordered by rank and suit. We could easily say that a single integer between 0-51 somehow represents a card, according to some ruling. 
 
 </br>
@@ -29,11 +39,13 @@ There are three major drawbacks to using an implementation like above:
 
 </br>
 
-Clearly using primitive types to represent our domain concept is a big no-no. Thankfully, enumerated types come to the rescue!
+Clearly using primitive types to represent our domain concept is a big no-no. Thankfully, enumerated types come to the rescue.
 
 </br>
 
 ### Enumerated Types
+
+</br>
 
 The use of enumerated types over say, integers, provides the benefit of increased compile-time checking and less room for errors(possibly from passing in invalid constants), and you document which values are legal to use.
 
@@ -53,3 +65,4 @@ class Card {
 }
 ~~~
 
+Although this may be a rather simple solution, it is worth noting that in software design it is often times (if not always) a best practice to prioritize readablility and cleanliness over more clever (and possibly more convoluted) code.

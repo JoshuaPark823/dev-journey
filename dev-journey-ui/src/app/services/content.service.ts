@@ -20,6 +20,4 @@ export class ContentService {
   ) { 
     this._contentStream$ = this._contentAPI.getAllPosts();
   }
-
-
 }

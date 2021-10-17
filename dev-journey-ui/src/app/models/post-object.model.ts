@@ -1,19 +1,16 @@
 import { Category } from './../enum/categories.enum';
 
-export class PostObject {
+export interface PostObject {
 
-    title!: string;
+    title: string;
 
-    description!: string;
+    markdownPath: string;
 
-    filePath!: string;
+    configPath: string;
 
-    category!: Category;
+    filePath: string;
 
-    constructor(title: string, filePath: string, description?: string, category?: Category) {
-        this.title = title;
-        this.filePath = filePath;
-        this.description = description || 'No description provided.';
-        this.category = category || Category.NONE;
-    }
+    description: string;
+
+    categories: Category[];
 }
