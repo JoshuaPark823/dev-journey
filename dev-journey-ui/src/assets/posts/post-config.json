@@ -3,6 +3,7 @@
         "title": "Primitive Obsession",
         "markdownPath": "./assets/posts/primitive-obsession/primitive-obsession.md",
         "configPath": "./assets/posts/primitive-obsession/post-config.json",
+        "filePath": "./assets/posts/primitive-obsession/",
         "description": "Primitive Obsession: The tendency to use primitive types to represent other abstractions of the domain concept.",
         "categories": "[DESIGN, OOP]"
     },
@@ -10,6 +11,7 @@
         "title": "Primitive Obsession",
         "markdownPath": "./assets/posts/primitive-obsession/primitive-obsession.md",
         "configPath": "./assets/posts/primitive-obsession/post-config.json",
+        "filePath": "./assets/posts/primitive-obsession/",
         "description": "Primitive Obsession: The tendency to use primitive types to represent other abstractions of the domain concept.",
         "categories": "[DESIGN, OOP]"
     },
@@ -17,6 +19,7 @@
         "title": "Primitive Obsession",
         "markdownPath": "./assets/posts/primitive-obsession/primitive-obsession.md",
         "configPath": "./assets/posts/primitive-obsession/post-config.json",
+        "filePath": "./assets/posts/primitive-obsession/",
         "description": "Primitive Obsession: The tendency to use primitive types to represent other abstractions of the domain concept.",
         "categories": "[DESIGN, OOP]"
     }

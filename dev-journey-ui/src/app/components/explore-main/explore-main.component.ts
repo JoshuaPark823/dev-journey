@@ -25,6 +25,8 @@ export class ExploreMainComponent implements OnInit {
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe(posts => {
         this.allPosts = posts;
+
+        console.log(this.allPosts[0].filePath);
       });
   }
 

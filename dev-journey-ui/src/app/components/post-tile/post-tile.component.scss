@@ -2,24 +2,21 @@
 
 .tile-container {
 
-    height: 40vh;
-    width: 20vw;
-
     border: $dark-border;
     border-radius: 0.5em;
-    // box-shadow: $global-box-shadow;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-    margin: 2.5em 0 2.5em 0;
-
-    // background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     background-color: whitesmoke;
 
-
-
     .tile {
+        padding: 5em;
 
-        padding: 1em;
+        .tile-header {
+            margin-bottom: 2.5em;
+        }
+
+        .tag-container {
+            color: #0000;
+        }
 
     }
 }

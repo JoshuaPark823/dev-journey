@@ -13,10 +13,13 @@
         </div>
 
         <!-- Content Display: Array of PostObject Tiles -->
-        <div class="content">
-            <!-- Render post tiles -->
-            <div *ngFor = "let post of allPosts; index as i" class="item-wrapper">
-                <app-post-tile [postRef]="post" (click)="openTile(post)"></app-post-tile>
+        <div class="content-conatiner">
+            <div class="content">
+                <!-- Render post tiles -->
+                <div *ngFor = "let post of allPosts; index as i" class="item-wrapper">
+                    <img class="post-image" [src]="post.filePath + '/hero.jpg'">
+                    <app-post-tile class="post-description" [postRef]="post" (click)="openTile(post)"></app-post-tile>
+                </div>
             </div>
         </div>
     </div>
