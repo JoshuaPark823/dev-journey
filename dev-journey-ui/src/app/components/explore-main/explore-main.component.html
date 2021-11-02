@@ -15,9 +15,17 @@
         <!-- Content Display: Array of PostObject Tiles -->
         <div class="content-conatiner">
             <div class="content">
+
+                <h1>Design Patterns</h1>
+                <div *ngFor = "let post of allPosts; index as i" class="item-wrapper">
+                    <!-- <img class="post-image" [src]="post.filePath + '/hero.jpg'"> -->
+                    <app-post-tile class="post-description" [postRef]="post" (click)="openTile(post)"></app-post-tile>
+                </div>
+                
+                <h1>Design Antipatterns</h1>
                 <!-- Render post tiles -->
                 <div *ngFor = "let post of allPosts; index as i" class="item-wrapper">
-                    <img class="post-image" [src]="post.filePath + '/hero.jpg'">
+                    <!-- <img class="post-image" [src]="post.filePath + '/hero.jpg'"> -->
                     <app-post-tile class="post-description" [postRef]="post" (click)="openTile(post)"></app-post-tile>
                 </div>
             </div>
