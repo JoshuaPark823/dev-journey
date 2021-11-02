@@ -21,9 +21,10 @@ $padding-outer: 22.5em;
 
         margin: 5em 5em 5em 5em;
 
-        .featured-left {
+        .featured-wrapper {
             display: flex;
-            align-items: center;
+            flex-flow: column nowrap;
+            justify-content: center;
 
             .featured-text-container {
                 h1 {
@@ -39,7 +40,25 @@ $padding-outer: 22.5em;
                     font-family: $lora-font;
                 }
             }
+
+            .button-group {
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+
+                button {
+                    height: 7.5em;
+                    width: 15em;
+
+                    background-color: #3A5C79;
+
+                }
+            }
         }
+
+
+        
     }
 
     .content {

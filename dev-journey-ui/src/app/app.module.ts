@@ -21,6 +21,7 @@ import { ViewMainComponent } from './components/view-main/view-main.component';
 import { ExploreMainComponent } from './components/explore-main/explore-main.component';
 import { PostTileComponent } from './components/post-tile/post-tile.component';
 import { SpongeAnimationComponent } from './components/sponge-animation/sponge-animation.component';
+import { SearchMainComponent } from './projects/search-algorithms/search-main/search-main.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SpongeAnimationComponent } from './components/sponge-animation/sponge-a
     ExploreMainComponent,
     PostTileComponent,
     SpongeAnimationComponent,
+    SearchMainComponent,
   ],
   imports: [
     BrowserModule,
