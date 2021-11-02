@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchMainComponent implements OnInit {
 
+  grid!: any[][];
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
