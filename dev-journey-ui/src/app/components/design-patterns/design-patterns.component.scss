@@ -1,0 +1,30 @@
+.main {
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+
+    .drawer-container {
+        height: 100%;
+
+        .sidenav {
+            padding: 3em;
+        }
+
+        .sidenav-content {
+            padding: 3em;
+
+            display: flex;
+            justify-content: center;
+
+            .side-nav-post {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+
+                padding-left: 10em;
+                padding-right: 10em;
+            }
+        }
+    }
+}

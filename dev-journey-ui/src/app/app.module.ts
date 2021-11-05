@@ -12,8 +12,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatRadioModule} from '@angular/material/radio';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
@@ -22,6 +22,7 @@ import { ExploreMainComponent } from './components/explore-main/explore-main.com
 import { PostTileComponent } from './components/post-tile/post-tile.component';
 import { SpongeAnimationComponent } from './components/sponge-animation/sponge-animation.component';
 import { SearchMainComponent } from './projects/search-algorithms/search-main/search-main.component';
+import { DesignPatternsComponent } from './components/design-patterns/design-patterns.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SearchMainComponent } from './projects/search-algorithms/search-main/se
     PostTileComponent,
     SpongeAnimationComponent,
     SearchMainComponent,
+    DesignPatternsComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,9 @@ import { SearchMainComponent } from './projects/search-algorithms/search-main/se
       }
     }),
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatRadioModule
   ],
   providers: [
     ContentAPI,
