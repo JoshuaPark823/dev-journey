@@ -2,16 +2,10 @@
     <mat-drawer-container class="drawer-container">
         <mat-drawer #drawer class="sidenav" mode="side" opened="true">
           <p>Design Patterns</p>
-          <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-          <button (click)="showFiller = !showFiller" mat-raised-button>
-            Toggle extra text
-          </button>
+          <div *ngFor = "let contentObj of contents"> {{ contentObj.objName }} </div>
         </mat-drawer>
       
         <div class="sidenav-content">
-          <!-- <button type="button" mat-button (click)="drawer.toggle()">
-            Toggle sidenav
-          </button> -->
           <div class="side-nav-post">
             <div markdown [src]="'./assets/posts/primitive-obsession/primitive-obsession.md'"></div>
           </div>

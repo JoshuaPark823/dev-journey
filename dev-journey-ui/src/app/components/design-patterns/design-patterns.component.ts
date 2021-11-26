@@ -8,11 +8,30 @@ import { FormControl } from '@angular/forms';
 })
 export class DesignPatternsComponent implements OnInit {
 
-  showFiller = false;
+  contents!: any[];
+  contentHeaders!: string[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.contentHeaders = [
+      'Primitive Obsession Antipattern',
+      'Composite Pattern',
+      'Strategy Pattern',
+      'Decorator Pattern',
+      'Observer Pattern'
+    ]
+
+    this.contents = this.createObject(this.contentHeaders);
+  }
+
+  createObject(names: string[]): any[] {
+    return names.map(name => {
+      return {
+        objName: name,
+        objPath: "path"
+      }
+    })
   }
 
 }

@@ -1,11 +1,17 @@
 .main {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     background-color: white;
 
     .drawer-container {
         height: 100%;
+        width: 60vw;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        margin-top: 5em;
 
         .sidenav {
             padding: 3em;
